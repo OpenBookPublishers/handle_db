@@ -8,7 +8,7 @@ Start a database instance:
 docker run --name handle_db -e POSTGRES_PASSWORD=mysecretpassword -e POSTGRES_DB=handlesystem -e POSTGRES_USER=handleserver -d openbookpublishers/handle_db
 `
 
-Then at the handle server (openbookpublishers/handle_server) you must add the following subsection to the server config section within `config.dct`:
+Then at the handle server ([openbookpublishers/handle_server][1]) you must add the following subsection to the server config section within `config.dct`:
 
 ```
   "storage_type" = "sql"
@@ -20,3 +20,5 @@ Then at the handle server (openbookpublishers/handle_server) you must add the fo
     "sql_read_only" = "no"
   }
 ```
+
+[1]: https://github.com/OpenBookPublishers/handle_server "Handle server repo"
